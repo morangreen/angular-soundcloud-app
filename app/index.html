@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="soundcloudApp">
+<head>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/services.js"></script>
+</head>
+<body ng-controller="soundcloudAppController">
+<div id="app_layout">
+    <div id="header"><span>SoundCloud App</span></div>
+    <div class="col-md-4">
+        <div class="search_container">
+            <track-search></track-search>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="img_container">
+            <track-stream></track-stream>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="recent_searches_container">
+            <recent-searches></recent-searches>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
+<script>
+    SC.initialize({
+        client_id: 'd652006c469530a4a7d6184b18e16c81'
+    });
+</script>

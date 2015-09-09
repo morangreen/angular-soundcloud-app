@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="container_header"><span>Recent Searches</span></div>
+    <div class="container_body">
+        <ul ng-repeat="recent_query in recent_queries | reverse">
+            <li ng-click="recentQueryClick(recent_query)">
+                {{recent_query}}
+            </li>
+        </ul>
+    </div>
+</div>
+
