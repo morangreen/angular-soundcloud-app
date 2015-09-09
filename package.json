@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/morangreen/angular-soundcloud-app/issues"
   },
-  "homepage": "https://github.com/morangreen/angular-soundcloud-app#readme"
+  "homepage": "https://github.com/morangreen/angular-soundcloud-app#readme",
+  "dependencies": {
+    "bower": "^1.5.2",
+    "express": "^4.13.3",
+    "request": "^2.61.0"
+  }
 }
